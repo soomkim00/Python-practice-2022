@@ -1,3 +1,12 @@
-number = int(input('정수를 입력하세요 : '))
-if number % 2 == 0 :
-    print(number, '은(는) 짝수입니다.')
+def fibo(n):
+    f1 = 0
+    f2 = 1
+    for i in range(n):
+        next = f1 + f2
+        f1 = f2
+        f2 = next
+    return f1
+
+
+a = int(input())
+print(fibo(a))
